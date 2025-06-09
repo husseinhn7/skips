@@ -7,7 +7,6 @@ import {
   MapPin,
   Trash2,
 } from "lucide-react";
-import { Progress } from "@/components/ui/progress";
 
 
 const steps = [
@@ -21,12 +20,9 @@ const steps = [
 
 const ProgressBar = () => {
   const currentStepIndex = steps.findIndex((step) => step.status === "current");
-  const progressPercentage = ((currentStepIndex + 1) / steps.length) * 100;
   return (
     <div className="mb-16">
-      <div className="mb-4">
-        <Progress value={progressPercentage} className="h-3 bg-gray-200" />
-      </div>
+    
 
       {/* Desktop Steps */}
       <div className="hidden md:flex items-center justify-between max-w-4xl mx-auto">

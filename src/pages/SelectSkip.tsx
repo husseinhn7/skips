@@ -11,194 +11,10 @@ import Hero from "@/components/Hero";
 
 
 
-const skips: Skip[] = [
-  {
-    id: 17934,
-    size: 4,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 162.5,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: true,
-    allows_heavy_waste: false,
-    image: "/placeholder.svg?height=150&width=200",
-    popular: false,
-    description: "Perfect for small home projects and garden clearance",
-  },
-  {
-    id: 17935,
-    size: 5,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 200.83,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: true,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    popular: true,
-    description: "Ideal for bathroom renovations and small extensions",
-  },
-  {
-    id: 17936,
-    size: 6,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 305,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: true,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    popular: false,
-    description: "Great for kitchen refits and medium home projects",
-  },
-  {
-    id: 17937,
-    size: 8,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 245.83,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: true,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    popular: false,
-    description: "Suitable for large home clearances and renovations",
-  },
-  {
-    id: 17938,
-    size: 10,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 296.67,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Perfect for commercial projects and large renovations",
-  },
-  {
-    id: 17939,
-    size: 12,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 325,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Ideal for construction sites and major clearances",
-  },
-  {
-    id: 17940,
-    size: 14,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 361.67,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Large capacity for extensive building projects",
-  },
-  {
-    id: 17941,
-    size: 16,
-    hire_period_days: 7,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 425,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Heavy-duty skip for major construction work",
-  },
-  {
-    id: 17942,
-    size: 20,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 668.33,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Maximum capacity for large-scale projects",
-  },
-  {
-    id: 17943,
-    size: 40,
-    hire_period_days: 14,
-    transport_cost: null,
-    per_tonne_cost: null,
-    price_before_vat: 730.83,
-    vat: 20,
-    postcode: "NR32",
-    area: "",
-    forbidden: false,
-    created_at: "2025-04-03T13:51:46.897146",
-    updated_at: "2025-04-07T13:16:52.992",
-    allowed_on_road: false,
-    allows_heavy_waste: true,
-    image: "/placeholder.svg?height=150&width=200",
-    description: "Industrial-grade skip for major developments",
-  },
-];
+
 
 export default function SkipSelectionPage() {
+    const [skips, setSkips] = useState<Skip[] | null>(null)
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
@@ -206,18 +22,23 @@ export default function SkipSelectionPage() {
             );
             const res = await response.json()
             console.log(res)
-            console.log("++++++++++++++++++++++++++++++++++++++++++")
+            setSkips(res)
         }
         fetchData()
     },[])
   const [selectedSkip, setSelectedSkip] = useState<Skip | null>(
-    skips.find((skip) => skip.popular) || null
+    skips && skips.find((skip) => skip.popular) || null
   );
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
 
   const handleSkipSelect = (skip: Skip) => {
     setSelectedSkip(skip);
-  };
+    };
+    if (!skips) {
+        return <div>
+            loading ....
+        </div>
+    }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
